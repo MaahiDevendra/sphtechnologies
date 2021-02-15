@@ -1,0 +1,1030 @@
+/* Coded with ❤ By MaahiDevendra */
+
+/* Preloder Coding Starts From Here */
+
+#preloder {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background: #fff;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+    transform: rotate(180deg) scale(0.6);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+}
+.loader {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+.loader > div {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  border: 2px solid #000;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  -webkit-animation: rotate 1s 0s ease-in-out infinite;
+  animation: rotate 1s 0s ease-in-out infinite;
+}
+.loader > div:last-child {
+  display: inline-block;
+  top: -10px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  border-color: #000 transparent #000 transparent;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+/* Preloder Coding Ends Here */
+
+/* Home Page Coding Starts From Here */
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(60px, auto);
+  grid-template-areas: "header" "main" "footer";
+}
+.header {
+  grid-area: header;
+  background-color: #fff;
+  background-image: url(../../assets/reach-us-bg.png);
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+.navigation-links {
+  text-align: right;
+  margin-right: 55px;
+  font-family: Nunito, sans-serif;
+}
+.navigation-links a {
+  text-decoration: none;
+  color: #000;
+}
+.navigation-links a:hover {
+  border-bottom: 3px solid #054aa6;
+  border-radius: 20px;
+}
+.navigation-links li {
+  text-align: center;
+  display: block;
+  margin: 15px;
+  font-weight: 900;
+  font-size: 18px;
+}
+.navigation-links li:hover {
+  border-bottom: 3px solid #054aa6;
+  border-radius: 20px;
+}
+.active {
+  background-color: #054aa6;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 58px;
+}
+.bar-icon {
+  margin-right: 20px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+#menu-icon {
+  height: 40px;
+  margin-top: 20px;
+}
+.nav-bar img {
+  height: 60px;
+  margin: 10px 0 0 15px;
+  float: left;
+}
+#myLinks {
+  display: none;
+}
+.main-content {
+  grid-area: main;
+}
+.main-item {
+  background-image: url(../../assets/main-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: auto;
+  padding-bottom: 50px;
+  grid-template-areas: "main-heading" "discription" "anim-logo" "cta-button" "feature-1" "feature-2";
+}
+.main-item h1 {
+  grid-area: main-heading;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Russo One", sans-serif;
+  color: #010d26;
+}
+.discription {
+  margin-top: 10px;
+  grid-area: discription;
+  text-align: center;
+}
+.anim-logo {
+  grid-area: anim-logo;
+}
+.anim-logo img {
+  margin: 145px 0 0 0;
+  width: 65vw;
+  animation: rotation 5s infinite linear;
+}
+.features {
+  font-family: Montserrat, sans-serif;
+}
+.feature-1 {
+  grid-area: feature-1;
+  text-align: center;
+  margin-top: 25px;
+}
+.call-to-action-button {
+  border: none;
+  grid-area: cta-button;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #054aa6;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0;
+}
+.feature-2 {
+  grid-area: feature-2;
+  text-align: center;
+  margin-top: 40px;
+}
+.pdf-accessbility {
+  background-image: url(../../assets/pdf-bg.png);
+  background-size: cover;
+}
+.pdf-accessbility h2 {
+  text-align: left;
+  margin-left: 25px;
+  font-size: 5vw;
+  position: relative;
+  top: 60px;
+  font-family: Montserrat, sans-serif;
+}
+.pdf-accessbility img {
+  width: 65vw;
+}
+.pdf-accessbility p {
+  margin: 50px 25px;
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+}
+.pdf-discription {
+  text-align: right;
+  margin-right: 30px;
+  font-size: 2.5vw;
+  font-family: Raleway, sans-serif;
+}
+.wwd {
+  padding: 100px 25px 100px 25px;
+  background-image: url(../../assets/wwd-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.wwd h2,
+.wwd hr {
+  margin-left: 15px;
+}
+.wwd img {
+  width: 75vw;
+  float: right;
+  margin: 0 20px 20px 10px;
+}
+.wwd h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+.wwd p {
+  text-align: left;
+  font-family: Raleway, sans-serif;
+}
+.hrline {
+  border: none;
+  height: 3px;
+  background-color: #054aa6;
+  border-radius: 40px;
+}
+.how-we-do {
+  background-image: url(../../assets/hwd-bg.png);
+  background-size: cover;
+  padding: 140px 0 0 0;
+}
+.how-we-do h2 {
+  text-align: right;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: xx-large;
+  margin-right: 25px;
+}
+.hwd-hr {
+  width: 70px;
+  margin-right: 25px;
+}
+.step-container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.steps {
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: Raleway, sans-serif;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.1);
+}
+.step-text {
+  text-align: center;
+  padding: 0 25px;
+}
+.circle {
+  padding: 20px 25px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.1);
+}
+.circle-1 {
+  background-color: #010d26;
+}
+.circle-2 {
+  background-color: #054aa6;
+}
+.circle-3 {
+  background-color: #07418c;
+}
+.circle-4 {
+  background-color: #48a1d9;
+}
+.circle-5 {
+  background-color: #010d26;
+}
+.reach-us {
+  background-image: url(../../assets/reach-us-bg.png);
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.reach-us h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: xx-large;
+  margin: 100px 0 15px 25px;
+}
+.reach-us hr.hrline {
+  width: 70px;
+  margin-bottom: 40px;
+  margin-left: 25px;
+}
+.location {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location img {
+  width: 35vw;
+}
+.address {
+  float: left;
+  text-align: left;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+  margin-left: 20px;
+}
+.add-line {
+  border: none;
+  background-color: #e0e0e0;
+  height: 1px;
+  margin-left: 0;
+}
+.get-documents {
+  background: linear-gradient(#010d26, #054aa6);
+  width: 80vw;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+}
+.get-documents h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: x-large;
+}
+.get-documents hr {
+  border: none;
+  margin: 5px auto;
+  background-color: #054aa6;
+  height: 2px;
+}
+.get-dis {
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  color: #fff;
+  margin: 25px;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  background-color: #000;
+  justify-content: space-evenly;
+  padding: 25px;
+  flex-direction: column;
+  font-family: Raleway, sans-serif;
+}
+.footer-ico {
+  height: 30px;
+  margin-bottom: -10px;
+}
+.useful-links {
+  line-height: 30px;
+}
+.footer-links {
+  text-decoration: none;
+  color: #fff;
+}
+.contact-info {
+  line-height: 50px;
+  font-size: 20px;
+}
+.foot-hr {
+  margin: 25px 0;
+  border: none;
+  background-color: #e0e0e0;
+  height: 0.1px;
+  width: 85px;
+}
+
+/* Home Page Coding Ends Here */
+
+/* Services Page Coding Starts From Here */
+
+.services-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: minmax(60px, auto);
+  grid-template-areas: "header" "sidebar" "main" "footer";
+}
+.services {
+  background-image: url(../../assets/wwd-bg.png);
+  grid-area: main;
+}
+.sidebar {
+  background-color: #f5f5f5;
+  grid-area: sidebar;
+}
+.side-links {
+  list-style: none;
+  margin-left: -25px;
+  line-height: 50px;
+  font-size: 18px;
+  font-family: Nunito, sans-serif;
+}
+.side-links:hover {
+  font-size: 20px;
+}
+.side-links a {
+  text-decoration: none;
+}
+.services h1 {
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+.serv-icon {
+  height: 60px;
+  margin-bottom: -10px;
+}
+.services h2 {
+  text-align: left;
+  margin-left: 40px;
+  font-family: Montserrat, sans-serif;
+}
+.services h2::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+.services h2 ~ p {
+  text-align: left;
+}
+.services p {
+  margin: 40px;
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+}
+
+/* Services Page Coding Ends Here */
+
+/* Why Choose Us Page Coding Starts From Here */
+
+.chooseus {
+  background-image: url(../../assets/hwd-bg.png);
+  background-position: bottom;
+  background-size: cover;
+  display: grid;
+  padding-bottom: 100px;
+  grid-template-columns: auto;
+  grid-template-areas: "heading" "always-on-time" "hard-working" "availablity" "profit" "transaction" "Accurate";
+}
+.chooseus h1 {
+  grid-area: heading;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: xx-large;
+  margin-bottom: 25px;
+}
+.chooseus-card {
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  padding: 25px 25px;
+  width: 250px;
+  margin: 20px auto;
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.1);
+}
+.chooseus-card img {
+  width: 80px;
+  margin-bottom: 58px;
+}
+.chooseus-card1 {
+  grid-area: always-on-time;
+}
+.chooseus-card2 {
+  grid-area: hard-working;
+}
+.chooseus-card3 {
+  grid-area: availablity;
+}
+.chooseus-card4 {
+  grid-area: profit;
+}
+.chooseus-card5 {
+  grid-area: transaction;
+}
+.chooseus-card6 {
+  grid-area: Accurate;
+}
+
+/* Why Choose Us Page Coding Ends Here */
+
+/* About Us Page Coding Starts From Here */
+
+.about {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(../../assets/about-bg.png);
+  background-position: center;
+}
+.about h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+#about-hr {
+  width: 80px;
+  margin: 20px auto;
+}
+.about img {
+  width: 80vw;
+  margin: 50px auto;
+}
+.about p {
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  margin: 10px 25px;
+}
+.why-work {
+  background-image: url(../../assets/wwd-bg.png);
+  background-position: bottom;
+  background-repeat: repeat-y;
+  padding-bottom: 5px;
+}
+.why-work h2 {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: x-large;
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 100px;
+}
+.why-work ~ h2,
+.why-work ~ hr {
+  margin-left: 25px;
+  text-align: left;
+}
+.why-work p {
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+  text-align: left;
+  margin: 25px;
+}
+.why-work li {
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+  text-align: left;
+  margin: 25px;
+}
+.about ~ p {
+  margin-left: 25px;
+  text-align: left;
+}
+.why-work h2 {
+  margin-left: 25px;
+}
+.why-work hr {
+  width: 85px;
+  margin-left: 25px;
+}
+#aim {
+  text-align: right;
+  margin-right: 25px;
+}
+#aim + hr + p {
+  margin-right: 25px;
+  text-align: right;
+  clear: both;
+}
+#aim + hr {
+  float: right;
+  margin: 10px 25px 20px 0;
+}
+
+/* About Us Page Coding Ends Here */
+
+/* Contact Us Page Coding Starts From Here */
+
+.con-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  margin: 50px auto;
+}
+.contact-us {
+  background-image: url(../../assets/hwd-bg.png);
+  background-position: center;
+  padding: 50px 0;
+}
+.contact-us h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+.con-icon {
+  height: 30px;
+}
+
+/* Contact Us Page Coding Ends Here */
+
+/* Animation for logo coding starts from here */
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Animation for logo coding Ends here */
+
+/* Coding for medium size device greater than 600px width (Tablet) coding starts from here */
+
+@media only screen and (min-width: 600px) {
+  .main-item {
+    height: 625px;
+    padding-bottom: 125px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "main-heading main-heading discription" "anim-logo anim-logo anim-logo" "feature-1 cta-button feature-2";
+  }
+  .main-item h1 {
+    text-align: left;
+    margin-left: 55px;
+    margin-top: 40px;
+  }
+  .discription {
+    margin-right: 55px;
+    margin-top: 40px;
+    text-align: right;
+  }
+  .anim-logo img {
+    margin: 0;
+    width: 25vw;
+  }
+  .feature-1 {
+    text-align: left;
+    margin-left: 55px;
+  }
+  .call-to-action-button {
+    margin-top: 50px;
+  }
+  .feature-2 {
+    text-align: right;
+    margin-right: 55px;
+  }
+  .pdf-accessbility h2 {
+    margin-left: 80px;
+    top: 120px;
+  }
+  .pdf-discription {
+    margin-right: 100px;
+    font-size: 2vw;
+  }
+  .fifth-step,
+  .first-step,
+  .third-step {
+    position: relative;
+    right: 30px;
+  }
+  .fourth-step,
+  .second-step {
+    position: relative;
+    left: 30px;
+  }
+  .chooseus {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "heading heading" "always-on-time hard-working" "availablity profit" "transaction Accurate";
+  }
+  .about h1 {
+    text-align: left;
+    margin-left: 55px;
+  }
+  .about {
+    flex-direction: row;
+  }
+  .about-text p {
+    text-align: left;
+    margin-left: 55px;
+  }
+  .about img {
+    margin: 0 120px 0 0;
+    width: 40vw;
+  }
+  .about ~ p {
+    margin-left: 55px;
+    text-align: left;
+  }
+  .why-work h2 {
+    margin-left: 55px;
+  }
+  .why-work hr {
+    width: 85px;
+    margin-left: 55px;
+  }
+  #aim {
+    text-align: right;
+    margin-right: 55px;
+  }
+  #aim + hr + p {
+    margin-right: 55px;
+    text-align: right;
+    clear: both;
+  }
+  #aim + hr {
+    float: right;
+    margin: 10px 55px 20px 0;
+  }
+  .why-work p {
+    margin: 25px 0 25px 55px;
+  }
+  .why-work li {
+    margin: 25px 0 25px 55px;
+  }
+  .con-links {
+    flex-direction: row;
+  }
+}
+
+/* Coding for medium size device greater than 600px width (Tablet) coding Ends here */
+
+/* Coding for Large size device greater than 935px width (Desktop pc's) coding starts from here */
+
+@media only screen and (min-width: 935px) {
+  .wrapper {
+    grid-auto-rows: minmax(60px, auto);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../../assets/reach-us-bg.svg);
+  }
+  .bar-icon {
+    font-size: 24px;
+  }
+  .nav-bar img {
+    height: 60px;
+    margin-left: 55px;
+  }
+  .navigation-links li {
+    display: inline;
+    margin: 0 16px;
+  }
+  .navigation-links li:hover {
+    border-bottom: none;
+  }
+  .bar-icon {
+    display: none;
+  }
+  #myLinks {
+    display: inline;
+  }
+  .main-item {
+    background-image: url(../../assets/main-bg.svg);
+    height: 625px;
+    padding-bottom: 125px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "main-heading main-heading discription" "anim-logo anim-logo anim-logo" "feature-1 cta-button feature-2";
+  }
+  .main-item h1 {
+    text-align: left;
+    margin-left: 55px;
+    margin-top: 40px;
+  }
+  .discription {
+    margin-right: 55px;
+    margin-top: 40px;
+    text-align: right;
+  }
+  .anim-logo img {
+    margin: -40px 0 0 0;
+    height: 350px;
+  }
+  .feature-1 {
+    text-align: left;
+    margin: 0 0 0 55px;
+  }
+  .call-to-action-button {
+    margin-top: 50px;
+  }
+  .feature-2 {
+    text-align: right;
+    margin: 0 55px 0 0;
+  }
+  .pdf-accessbility {
+    background-image: url(../../assets/pdf-bg.svg);
+  }
+  .pdf-accessbility h2 {
+    margin-left: 220px;
+    top: 150px;
+    margin-top: 0;
+  }
+  .pdf-accessbility p {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .pdf-discription {
+    margin-right: 150px;
+    font-size: 1.5vw;
+  }
+  .wwd {
+    background-image: url(../../assets/wwd-bg.svg);
+  }
+  .wwd h2,
+  .wwd hr,
+  .wwd p {
+    margin-left: 55px;
+  }
+  .wwd img {
+    width: 40vw;
+  }
+  .how-we-do {
+    background-image: url(../../assets/hwd-bg.svg);
+  }
+  .how-we-do h2 {
+    margin-right: 275px;
+  }
+  .fifth-step,
+  .first-step,
+  .third-step {
+    position: relative;
+    right: 200px;
+  }
+  .fourth-step,
+  .second-step {
+    position: relative;
+    left: 200px;
+  }
+  .hwd-hr {
+    margin-right: 275px;
+  }
+  .reach-us {
+    background-image: url(../../assets/reach-us-bg.svg);
+  }
+  .reach-us hr.hrline {
+    margin-left: 85px;
+  }
+  .reach-us h2 {
+    margin-left: 85px;
+    margin-top: 200px;
+  }
+  .add-line {
+    margin-left: 0;
+  }
+  .location {
+    width: 75vw;
+  }
+  .location img {
+    width: 25vw;
+  }
+  .address {
+    line-height: 25px;
+  }
+  .get-documents {
+    flex-direction: row;
+    width: 60vw;
+    height: 200px;
+  }
+  .get-documents h3 {
+    margin-left: 25px;
+    text-align: left;
+  }
+  .get-dis {
+    text-align: right;
+  }
+  .get-documents hr {
+    margin-left: 0;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .footer hr {
+    display: none;
+  }
+  .services {
+    background-image: url(../../assets/wwd-bg.svg);
+  }
+  .services-wrapper {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .sidebar {
+    position: fixed;
+    margin-top: 60px;
+    padding: 40px;
+    height: 90vh;
+  }
+  .chooseus {
+    background-image: url(../../assets/hwd-bg.svg);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "heading heading heading" "always-on-time hard-working availablity" "profit transaction Accurate";
+  }
+  .about h1 {
+    text-align: left;
+    margin-left: 55px;
+  }
+  .about {
+    background-image: url(../../assets/about-bg.svg);
+    flex-direction: row;
+  }
+  .about-text p {
+    text-align: left;
+    margin-left: 55px;
+  }
+  .about img {
+    margin: 0 120px 0 0;
+    width: 35vw;
+  }
+  .about ~ p {
+    margin-left: 55px;
+    text-align: left;
+  }
+  .why-work {
+    background-image: url(../../assets/wwd-bg.svg);
+  }
+  .why-work h2 {
+    margin-left: 55px;
+  }
+  .why-work hr {
+    width: 85px;
+    margin-left: 55px;
+  }
+  #aim {
+    text-align: right;
+    margin-right: 55px;
+  }
+  #aim + hr + p {
+    margin-right: 55px;
+    text-align: right;
+  }
+  #aim + hr {
+    margin-left: 1200px;
+  }
+  .why-work p {
+    margin: 25px 0 25px 55px;
+  }
+  .why-work li {
+    margin: 25px 0 25px 55px;
+  }
+  .contact-us {
+    background-image: url(../../assets/hwd-bg.svg);
+  }
+  .con-links {
+    flex-direction: row;
+  }
+}
+
+/* Coding for Large size device greater than 935px width (Desktop pc's) coding Ends here */
