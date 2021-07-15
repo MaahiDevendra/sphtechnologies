@@ -93,9 +93,6 @@ body {
 .header {
   grid-area: header;
   background-color: #fff;
-  background-image: url(../../assets/reach-us-bg.png);
-  background-size: cover;
-  background-position: center;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -219,10 +216,6 @@ body {
   text-align: center;
   margin-top: 40px;
 }
-.pdf-accessbility {
-  /* background-image: url(../../assets/pdf-bg.png); */
-  background-size: cover;
-}
 .pdf-accessbility h2 {
   text-align: left;
   margin-left: 25px;
@@ -247,9 +240,6 @@ body {
 }
 .wwd {
   padding: 50px 25px 50px 25px;
-  /* background-image: url(../../assets/wwd-bg.png); */
-  background-size: cover;
-  background-position: center;
 }
 .wwd h2,
 .wwd hr {
@@ -338,8 +328,6 @@ body {
   background-color: #010d26;
 }
 .reach-us {
-  /* background-image: url(../../assets/reach-us-bg.png); */
-  background-size: cover;
   padding-bottom: 100px;
 }
 .reach-us h2 {
@@ -479,7 +467,6 @@ footer {
   grid-template-areas: "header" "sidebar" "main" "footer";
 }
 .services {
-  /* background-image: url(../../assets/wwd-bg.png); */
   grid-area: main;
 }
 .sidebar {
@@ -602,8 +589,6 @@ footer {
   padding-top: 50px;
   justify-content: space-between;
   flex-direction: column;
-  /* background-image: url(../../assets/about-bg.png); */
-  background-position: center;
 }
 .about h1 {
   text-align: center;
@@ -626,9 +611,6 @@ footer {
   margin: 10px 25px;
 }
 .why-work {
-  /* background-image: url(../../assets/wwd-bg.png); */
-  background-position: bottom;
-  background-repeat: repeat-y;
   padding-bottom: 5px;
 }
 .why-work h2 {
@@ -848,7 +830,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../../assets/reach-us-bg.svg);
   }
   .bar-icon {
     font-size: 24px;
@@ -902,9 +883,6 @@ footer {
     text-align: right;
     margin: 0 55px 0 0;
   }
-  .pdf-accessbility {
-    /* background-image: url(../../assets/pdf-bg.svg); */
-  }
   .pdf-accessbility h2 {
     margin-left: 220px;
     top: 150px;
@@ -917,9 +895,6 @@ footer {
   .pdf-discription {
     margin-right: 150px;
     font-size: 1.5vw;
-  }
-  .wwd {
-    /* background-image: url(../../assets/wwd-bg.svg); */
   }
   .wwd h2,
   .wwd hr,
@@ -948,9 +923,6 @@ footer {
   }
   .hwd-hr {
     margin-right: 275px;
-  }
-  .reach-us {
-    /* background-image: url(../../assets/reach-us-bg.svg); */
   }
   .reach-us hr.hrline {
     margin-left: 85px;
@@ -1004,9 +976,6 @@ footer {
     left: 2px;
     height: 30px;
   }
-  .services {
-    /* background-image: url(../../assets/wwd-bg.svg); */
-  }
   .services-wrapper {
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "header header" "sidebar main" "footer footer";
@@ -1047,9 +1016,6 @@ footer {
   .about ~ p {
     margin-left: 55px;
     text-align: left;
-  }
-  .why-work {
-    /* background-image: url(../../assets/wwd-bg.svg); */
   }
   .why-work h2 {
     margin-left: 55px;
