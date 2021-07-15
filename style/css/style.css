@@ -119,10 +119,6 @@ body {
   font-weight: 900;
   font-size: 18px;
 }
-.navigation-links li:hover {
-  border-bottom: 3px solid #054aa6;
-  border-radius: 20px;
-}
 .active {
   background-color: #054aa6;
   color: #fff;
