@@ -1,7 +1,7 @@
 # SPH Technologies
 SPH Technologies is the my first project, I have worked hardly. It is simply a static site in which five pages Home, Services, Why Choose Us, About Us and Contact Us.
 
-## I have also designed for this company
+## I have also designed Brand Logo for this company
 link: https://mega.nz/file/nxowyDAC#-PPSQEvvzMNiSmtHKBArQ48HNIWtCH4wUdS5ijDYVns
 
 ## Website Design Mockup
