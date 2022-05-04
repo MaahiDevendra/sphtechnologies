@@ -8,6 +8,6 @@ link: https://mega.nz/file/nxowyDAC#-PPSQEvvzMNiSmtHKBArQ48HNIWtCH4wUdS5ijDYVns
 link: https://mega.nz/file/20IlBaJR#ynUtZ1wXVL3bk6WKpwH5elw7jqvNux18lQCrQ-0he2c
 
 ## Website live on
-https://maahidevendra.github.io/sphtechnologies/
+https://sphtech.webuisoft.com/
 
 Developed with ❤ by MaahiDevendra
